@@ -1,3 +1,4 @@
-'''
-Implement
-'''
+class NotificationService:
+    '''
+    Implement
+    '''

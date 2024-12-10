@@ -4,11 +4,17 @@ from ReminderManager import ReminderManager
 from Reminder import Reminder
 from User import User, UserService
 from RecurrenceRule import RecurrenceRule, RecurrenceType
+from TimeParser import TimeParser
+from NotificationService import NotificationService
+from Scheduler import Scheduler
 
 class ReminderBot:
     def __init__(self):
         self.reminder_manager = ReminderManager()
         self.user_service = UserService()
+        self.time_parser = TimeParser() # integrate
+        self.notification_service = NotificationService() # implement
+        self.scheduler = Scheduler() # implement
 
     def handle_login(self) -> None:
         username = input("Enter username: ")
